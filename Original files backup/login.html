@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Clothing Store</title>
+</head>
+<body>
+    <div class="login-page">
+        <main class="login-shell">
+
+            <section class="login-story">
+                <div>
+                    <p class="login-brand">CLOTHING STORE</p>
+                    <p class="login-collection">THE EVERYDAY STYLE EDIT</p>
+                    <h2>Style that feels like you.</h2>
+                    <p class="login-story-text">
+                        Discover the pieces you love, find your new favourites,
+                        and make every outfit your own.
+                    </p>
+                </div>
+
+                <div class="login-story-bottom">
+                    <p>GOOD STYLE. GOOD ENERGY.</p>
+                    <p>Welcome to your next favourite look.</p>
+                </div>
+            </section>
+
+            <section class="login-panel">
+
+    <!-- Create-account view -->
+    <div id="create-account-view" class="account-view">
+        <a class="login-home" href="#login-view">← Back to login</a>
+
+        <div class="login-heading">
+            <p class="login-welcome">JOIN THE STYLE EDIT</p>
+            <h2>Create your account</h2>
+            <p>Add your details to get started.</p>
+        </div>
+
+        <form class="login-form">
+            <label class="login-label" for="create-name">Full name</label>
+            <input class="login-input" id="create-name" name="name" type="text" placeholder="Your full name">
+
+            <label class="login-label" for="create-email">Email address</label>
+            <input class="login-input" id="create-email" name="email" type="email" placeholder="you@example.com">
+
+            <label class="login-label" for="create-password">Create password</label>
+            <input class="login-input" id="create-password" name="password" type="password" placeholder="Create a password">
+
+            <label class="login-label" for="confirm-password">Confirm password</label>
+            <input class="login-input" id="confirm-password" name="confirm-password" type="password" placeholder="Enter your password again">
+
+            <button class="login-button" type="button">Create account</button>
+
+            <p class="login-demo-note">
+                This is a demonstration. Your details are not saved.
+            </p>
+        </form>
+    </div>
+
+    <!-- Forgot-password view -->
+    <div id="forgot-password-view" class="account-view">
+        <a class="login-home" href="#login-view">← Back to login</a>
+
+        <div class="login-heading">
+            <p class="login-welcome">NEED A HAND?</p>
+            <h2>Reset your password</h2>
+            <p>Enter your email address and we’ll help you get back to your account.</p>
+        </div>
+
+        <form class="login-form">
+            <label class="login-label" for="reset-email">Email address</label>
+            <input class="login-input" id="reset-email" name="email" type="email" placeholder="you@example.com">
+
+            <button class="login-button" type="button">Send reset link</button>
+
+            <p class="login-demo-note">
+                This is a demonstration. It won’t send an email.
+            </p>
+        </form>
+    </div>
+
+    <!-- Login view -->
+    <div id="login-view" class="account-view">
+        <a class="login-home" href="index.html">← Back to store</a>
+
+        <div class="login-heading">
+            <p class="login-welcome">WELCOME BACK</p>
+            <h2>Log in to your account</h2>
+            <p>Enter your details below to continue.</p>
+        </div>
+
+        <form class="login-form">
+            <label class="login-label" for="email">Email address</label>
+            <input
+                class="login-input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+            >
+
+            <label class="login-label" for="password">Password</label>
+            <input
+                class="login-input"
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+            >
+
+            <div class="login-options">
+                <label class="login-remember" for="remember">
+                    <input id="remember" name="remember" type="checkbox">
+                    Remember me
+                </label>
+
+                <a class="login-text-link" href="#forgot-password-view">
+                    Forgot password?
+                </a>
+            </div>
+
+            <button class="login-button" type="button">Log in</button>
+
+            <p class="login-demo-note">
+                This is a front-end demonstration. The login button does not
+                verify an account or save your details.
+            </p>
+
+            <p class="login-create">
+                New to the store?
+                <a class="login-text-link" href="#create-account-view">Create an account</a>
+            </p>
+        </form>
+    </div>
+
+</section>
+
+        </main>
+    </div>
+</body>
+</html>

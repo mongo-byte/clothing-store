@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Clothing Store</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="payment-page">
+    <header class="navbar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="kids.html">Kids</a>
+            <a href="trending.html">Trending</a>
+            <a href="offers.html">Offers</a>
+            <a href="cart.html">Cart 🛒</a>
+        </nav>
+    </header>
+    <main class="payment-container">
+        <div class="payment-heading">
+            <p class="payment-kicker">SECURE CHECKOUT DEMONSTRATION</p>
+            <h1>Complete your order</h1>
+            <p>Review your items and enter delivery details.</p>
+        </div>
+        <div id="payment-empty" class="payment-panel" hidden>
+            <h2>Your cart is empty</h2>
+            <p>Add something to your cart before checkout.</p>
+            <a class="payment-button" href="index.html">Continue shopping</a>
+        </div>
+        <div id="payment-layout" class="payment-layout">
+            <section class="payment-panel">
+                <h2>Delivery information</h2>
+                <form id="payment-form" novalidate>
+                    <label for="payment-name">Full name</label>
+                    <input id="payment-name" name="name" type="text" autocomplete="name">
+                    <label for="payment-email">Email address</label>
+                    <input id="payment-email" name="email" type="email" autocomplete="email">
+                    <label for="payment-phone">Phone number</label>
+                    <input id="payment-phone" name="phone" type="tel" autocomplete="tel">
+                    <label for="payment-address">Delivery address</label>
+                    <textarea id="payment-address" name="address" rows="3" autocomplete="street-address"></textarea>
+                    <h2 class="payment-method-heading">Payment method</h2>
+                    <label class="payment-choice"><input type="radio" name="payment-method" value="UPI" checked> UPI (simulation)</label>
+                    <label class="payment-choice"><input type="radio" name="payment-method" value="Credit/Debit Card"> Credit/Debit Card (simulation)</label>
+                    <label class="payment-choice"><input type="radio" name="payment-method" value="Cash on Delivery"> Cash on Delivery</label>
+                    <p class="payment-note">Demo only: never enter card details, CVV, UPI PIN, or banking passwords here.</p>
+                    <p id="payment-error" class="payment-error" role="alert"></p>
+                    <button class="payment-button" type="submit">Place demonstration order</button>
+                </form>
+            </section>
+            <section class="payment-panel">
+                <h2>Order summary</h2>
+                <div id="payment-items"></div>
+                <div class="payment-total-row"><span>Subtotal</span><strong id="payment-subtotal"></strong></div>
+                <div class="payment-total-row"><span>Shipping</span><strong>Free</strong></div>
+                <div class="payment-total-row payment-grand-total"><span>Total</span><strong id="payment-total"></strong></div>
+            </section>
+        </div>
+        <section id="payment-success" class="payment-panel" hidden>
+            <p class="payment-kicker">DEMONSTRATION COMPLETE</p>
+            <h2>Thank you, <span id="payment-customer"></span>!</h2>
+            <p>Your sample order has been confirmed for this demonstration. No payment was processed.</p>
+            <a class="payment-button" href="index.html">Return to shopping</a>
+        </section>
+    </main>
+    <script src="JS/payment.js"></script>
+</body>
+</html>
